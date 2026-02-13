@@ -12,7 +12,7 @@ module.exports = (argv) => {
   return {
     entry: {
       main: {
-        import: "./js/module.js",
+        import: ["./js/module.js", "./src/main.js"],
         filename: "./js/module.js",
       },
     },
