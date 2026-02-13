@@ -19,7 +19,7 @@
 		style.id = STYLE_ID;
 		style.textContent = `
           #${ROOT_ID} {
-             margin: 12px 0;
+             margin: 12px 6px;
           }
           
           .bubbi-toast {
@@ -59,13 +59,12 @@
           }
           
           .bubbi-title {
-             font-weight: 600;
-             margin-bottom: 2px;
+             font-weight: 700;
           }
           
           .bubbi-replay {
              display: inline-block;
-             margin-top: 8px;
+             font-size: 18px;
              color: blue;
              text-decoration: underline;
              cursor: pointer;
@@ -146,7 +145,7 @@
 		root.id = ROOT_ID;
 		
 		mountPoint.insertAdjacentElement('afterend', root);
-		showMessages(root);
+		setTimeout(() => showMessages(root), 300);
 	};
 	
 	ensureMounted();
